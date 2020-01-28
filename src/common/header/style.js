@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import logoPic from "../../statics/logo.png";
+import styled from 'styled-components';
+import logoPic from '../../statics/logo.png';
 
 export const HeaderWrapper = styled.div`
   position: relative;
@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Logo = styled.a.attrs({
-  href: "./"
+  href: './'
 })`
   position: absolute;
   top: 0;
@@ -65,7 +65,7 @@ export const SearchWrapper = styled.div`
 `;
 
 export const NavSearch = styled.input.attrs({
-  placeholder: "搜索"
+  placeholder: '搜索'
 })`
   width: 160px;
   height: 38px;
