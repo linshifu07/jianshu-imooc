@@ -9,9 +9,37 @@ import {
   NavItem,
   SearchWrapper,
   NavSearch,
+  SearchInfo,
+  SearchInfoTitle,
+  SearchInfoSwitch,
+  SearchInfoList,
+  SearchInfoItem,
   Addition,
   Button
 } from './style';
+
+const getListArea = show => {
+  if (show) {
+    return (
+      <SearchInfo>
+        <SearchInfoTitle>
+          热门搜索
+          <SearchInfoSwitch>换一批</SearchInfoSwitch>
+        </SearchInfoTitle>
+        <SearchInfoList>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+        </SearchInfoList>
+      </SearchInfo>
+    );
+  } else {
+    return null;
+  }
+};
 
 const Header = props => {
   return (
@@ -25,7 +53,11 @@ const Header = props => {
           <span className='iconfont'>&#xe636;</span>
         </NavItem>
         <SearchWrapper>
-          <CSSTransition in={props.focused} timeout={200} classNames='slide'>
+          <CSSTransition
+            in={Boolean(props.focused)}
+            timeout={200}
+            classNames='slide'
+          >
             <NavSearch
               className={props.focused ? 'focused' : ''}
               onFocus={props.handleInputFocus}
@@ -35,6 +67,7 @@ const Header = props => {
           <span className={props.focused ? 'focused iconfont' : 'iconfont'}>
             &#xe60d;
           </span>
+          {getListArea(props.focused)}
         </SearchWrapper>
       </Nav>
       <Addition>
@@ -50,7 +83,7 @@ const Header = props => {
 
 const mapStateToProps = state => {
   return {
-    focused: state.getIn(['header'],['focused'])
+    focused: state.getIn(['header', 'focused'])
   };
 };
 const mapDispatchToProps = dispatch => {
