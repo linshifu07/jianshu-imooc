@@ -48,7 +48,9 @@ class Header extends Component {
                 onBlur={this.props.handleInputBlur}
               ></NavSearch>
             </CSSTransition>
-            <span className={focused ? 'focused iconfont' : 'iconfont'}>
+            <span
+              className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}
+            >
               &#xe60d;
             </span>
             {this.getListArea()}
@@ -79,7 +81,7 @@ class Header extends Component {
     const newList = list.toJS();
     const pageList = [];
 
-    if(newList.length){
+    if (newList.length) {
       for (let i = (page - 1) * 10; i < page * 10; i++) {
         pageList.push(
           <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem>
@@ -95,7 +97,15 @@ class Header extends Component {
         >
           <SearchInfoTitle>
             热门搜索
-            <SearchInfoSwitch onClick={() => handleChangePage(page, totalPage)}>
+            <SearchInfoSwitch
+              onClick={() => handleChangePage(page, totalPage, this.spinIcon)}
+            >
+              <span
+                ref={icon => (this.spinIcon = icon)}
+                className='iconfont spin'
+              >
+                &#xe606;
+              </span>
               换一批
             </SearchInfoSwitch>
           </SearchInfoTitle>
@@ -132,12 +142,21 @@ const mapDispatchToProps = dispatch => {
     handleMouseLeave() {
       dispatch(actionCreators.mouseLeave());
     },
-    handleChangePage(page, totalPage) {
-      if(page<totalPage){
-        dispatch(actionCreators.changePage(page+1));
-      }else{
+    handleChangePage(page, totalPage, spin) {
+      
+      let originAngle = spin.style.transform.replace(/[^0-9]/gi, '');
+      if (originAngle) {
+        originAngle = parseInt(originAngle, 10);
+      } else {
+        originAngle = 0;
+      }
+
+      spin.style.transform = 'rotate(' + (originAngle + 360) + 'deg)';
+      if (page < totalPage) {
+        dispatch(actionCreators.changePage(page + 1));
+      } else {
         dispatch(actionCreators.changePage(1));
-      } 
+      }
     }
   };
 };
