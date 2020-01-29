@@ -25,7 +25,7 @@ class Header extends Component {
   }
 
   render() {
-    const { focused } = this.props;
+    const { list, focused, handleInputFocus, handleInputBlur } = this.props;
     return (
       <HeaderWrapper>
         <Logo />
@@ -44,8 +44,8 @@ class Header extends Component {
             >
               <NavSearch
                 className={focused ? 'focused' : ''}
-                onFocus={this.props.handleInputFocus}
-                onBlur={this.props.handleInputBlur}
+                onFocus={() => handleInputFocus(list)}
+                onBlur={handleInputBlur}
               ></NavSearch>
             </CSSTransition>
             <span
@@ -129,8 +129,8 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
   return {
-    handleInputFocus() {
-      dispatch(actionCreators.getList());
+    handleInputFocus(list) {
+      list.size === 0 && dispatch(actionCreators.getList());
       dispatch(actionCreators.searchFocus());
     },
     handleInputBlur() {
@@ -143,7 +143,6 @@ const mapDispatchToProps = dispatch => {
       dispatch(actionCreators.mouseLeave());
     },
     handleChangePage(page, totalPage, spin) {
-      
       let originAngle = spin.style.transform.replace(/[^0-9]/gi, '');
       if (originAngle) {
         originAngle = parseInt(originAngle, 10);
