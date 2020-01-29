@@ -19,7 +19,6 @@ class Home extends Component {
           <List></List>
         </HomeLeft>
         <HomeRight>
-          
           <Recommend></Recommend>
           <Writer></Writer>
         </HomeRight>

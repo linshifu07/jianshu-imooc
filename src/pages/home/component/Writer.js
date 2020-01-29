@@ -1,11 +1,9 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react';
 
 class Writer extends Component {
-    render(){
-        return(
-            <div>Writer~</div>
-        )
-    }
+  render() {
+    return <div>Writer~</div>;
+  }
 }
 
-export default Writer
+export default Writer;
