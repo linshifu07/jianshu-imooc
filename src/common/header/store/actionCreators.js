@@ -26,7 +26,6 @@ export const changePage = (page) =>({
 
 export const getList = () => {
   return dispatch => {
-    // console.log(store.getIn(['header','list']))
     axios
       .get('/api/headerList.json')
       .then(res => {
