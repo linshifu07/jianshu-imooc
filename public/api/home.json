@@ -1,51 +1,93 @@
 {
-	"success": true,
-	"data": {
-		"topicList": [{
-			"id": 1,
-			"title": "社会热点",
-			"imgUrl": "//upload.jianshu.io/collections/images/261938/man-hands-reading-boy-large.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
-		}, {
-			"id": 2,
-			"title": "手手绘",
-			"imgUrl": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
-		}],
-		"articleList": [{
-			"id": 1,
-			"title": "为什么渣男总是特别吸引人？",
-			"desc": "我知道他很渣，但是我就是爱；也许我的确不是他唯一爱的女人，但是我依旧愿意和他在一起；他不理我了，但是我还是不想离开他…… 在爱情中，有太多女人，...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2100084-c8e5c396dad6b6c8?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
-		}, {
-			"id":2,
-			"title":"猫主子偷吻大橘得逞，橘猫懵：你好坏哦，不知羞！网友：我酸了",
-			"desc":"编者按：所谓生活本该多姿多彩，充满情调的日子才叫生活！喵星人们也是深谙此道啊，难怪铲屎官们总喜欢给猫咪找个伴儿，一起成长，果然是身心愉悦、有利健...",
-			"imgUrl":"//upload-images.jianshu.io/upload_images/14352811-c895351d341899be.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
-		  }, {
-			"id": 3,
-			"title": "为什么渣男总是特别吸引人？",
-			"desc": "我知道他很渣，但是我就是爱；也许我的确不是他唯一爱的女人，但是我依旧愿意和他在一起；他不理我了，但是我还是不想离开他…… 在爱情中，有太多女人，...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2100084-c8e5c396dad6b6c8?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
-		}, {
-			"id":4,
-			"title":"猫主子偷吻大橘得逞，橘猫懵：你好坏哦，不知羞！网友：我酸了",
-			"desc":"编者按：所谓生活本该多姿多彩，充满情调的日子才叫生活！喵星人们也是深谙此道啊，难怪铲屎官们总喜欢给猫咪找个伴儿，一起成长，果然是身心愉悦、有利健...",
-			"imgUrl":"//upload-images.jianshu.io/upload_images/14352811-c895351d341899be.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
-		  }],
-		"recommendList": [{ 
-			"id":1,
-			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
-		  },
-		  {
-			"id":2,
-			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
-		  },
-		  {
-			"id":3,
-			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
-		  },
-		  {
-			"id":4,
-			"imgUrl":"http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
-		  }]
-	}
+  "success": true,
+  "data": {
+    "topicList": [
+      {
+        "id": 1,
+        "title": "社会热点",
+        "imgUrl": "//upload.jianshu.io/collections/images/261938/man-hands-reading-boy-large.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+      },
+      {
+        "id": 2,
+        "title": "手手绘",
+        "imgUrl": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+      }
+    ],
+    "articleList": [
+      {
+        "id": 1,
+        "title": "为什么渣男总是特别吸引人？",
+        "desc": "我知道他很渣，但是我就是爱；也许我的确不是他唯一爱的女人，但是我依旧愿意和他在一起；他不理我了，但是我还是不想离开他…… 在爱情中，有太多女人，...",
+        "imgUrl": "//upload-images.jianshu.io/upload_images/2100084-c8e5c396dad6b6c8?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+      },
+      {
+        "id": 2,
+        "title": "猫主子偷吻大橘得逞，橘猫懵：你好坏哦，不知羞！网友：我酸了",
+        "desc": "编者按：所谓生活本该多姿多彩，充满情调的日子才叫生活！喵星人们也是深谙此道啊，难怪铲屎官们总喜欢给猫咪找个伴儿，一起成长，果然是身心愉悦、有利健...",
+        "imgUrl": "//upload-images.jianshu.io/upload_images/14352811-c895351d341899be.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+      },
+      {
+        "id": 3,
+        "title": "为什么渣男总是特别吸引人？",
+        "desc": "我知道他很渣，但是我就是爱；也许我的确不是他唯一爱的女人，但是我依旧愿意和他在一起；他不理我了，但是我还是不想离开他…… 在爱情中，有太多女人，...",
+        "imgUrl": "//upload-images.jianshu.io/upload_images/2100084-c8e5c396dad6b6c8?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+      },
+      {
+        "id": 4,
+        "title": "猫主子偷吻大橘得逞，橘猫懵：你好坏哦，不知羞！网友：我酸了",
+        "desc": "编者按：所谓生活本该多姿多彩，充满情调的日子才叫生活！喵星人们也是深谙此道啊，难怪铲屎官们总喜欢给猫咪找个伴儿，一起成长，果然是身心愉悦、有利健...",
+        "imgUrl": "//upload-images.jianshu.io/upload_images/14352811-c895351d341899be.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": 1,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+      },
+      {
+        "id": 2,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+      },
+      {
+        "id": 3,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+      },
+      {
+        "id": 4,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+      }
+    ],
+    "writerList": [
+      {
+        "id": 1,
+        "imgUrl": "https://upload.jianshu.io/users/upload_avatars/4263857/34d7b217-7338-48fe-81a1-98367fecdbee.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "writerName": "王小麦",
+        "writerDesc": "写了137.2k字 · 40.3k喜欢"
+      },
+      {
+        "id": 2,
+        "imgUrl": "https://upload.jianshu.io/users/upload_avatars/2631077/dc99c361412c?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "writerName": "木清琳",
+        "writerDesc": "写了277.5k字 · 29.4k喜欢"
+      },
+      {
+        "id": 3,
+        "imgUrl": "https://upload.jianshu.io/users/upload_avatars/4287007/b7b9c810-069e-4385-aec7-1823e94ee43d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "writerName": "晖宗聊绘画",
+        "writerDesc": "写了169.6k字 · 2.5k喜欢"
+      },
+      {
+        "id": 4,
+        "imgUrl": "https://upload.jianshu.io/users/upload_avatars/677687/c84b99723362.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "writerName": "灰土豆",
+        "writerDesc": "写了347.3k字 · 1.9k喜欢"
+      },
+      {
+        "id": 5,
+        "imgUrl": "https://upload.jianshu.io/users/upload_avatars/278/3d103a3cbb96.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "writerName": "邓哲",
+        "writerDesc": "写了420.1k字 · 1.3k喜欢"
+      }
+    ]
+  }
 }

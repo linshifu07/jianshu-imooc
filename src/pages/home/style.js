@@ -87,14 +87,85 @@ export const RecommendWrapper = styled.div`
 export const RecommendItem = styled.div`
   width: 280px;
   height: 50px;
+  margin-bottom:6px;
   background: url(${props => props.imgUrl});
   background-size: contain;
 `;
 
 export const WriterWrapper = styled.div`
-  width:278px;
-  border: 1px solid #dcdcdc;
-  height:300px;
-  line-height:300px;
-  text-align:center;
-`
+  width: 278px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+`;
+
+export const WriterTitle = styled.div`
+  overflow: hidden;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  color: #969696;
+  text-align: left;
+`;
+
+export const WriterSwitch = styled.div`
+  float: right;
+  cursor: pointer;
+  .spin {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+`;
+
+export const WriterItem = styled.div`
+  width: 280px;
+  height: 48px;
+  margin-top: 15px;
+  .writer-img {
+    display: block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin: 0 8px;
+  }
+`;
+
+export const WriterInfoWrapper = styled.div`
+  display:flex;
+  flex-wrap:wrap;
+  height: 48px;
+`;
+
+export const WriterName = styled.div`
+  display: block;
+  height: 14px;
+  width: 150px;
+  line-height: 14px;
+  font-size: 14px;
+  padding-top: 5px;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+`;
+
+export const WriterAttention = styled.div`
+  float: right;
+  height: 13px;
+  width: 50px;
+  text-align: right;
+  line-height: 13px;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 400;
+  color: #42c02e;
+  cursor: pointer;
+`;
+
+export const WriterDesc = styled.div`
+  margin-top: 2px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #969696;
+`;
