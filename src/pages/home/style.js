@@ -42,6 +42,7 @@ export const TopicItem = styled.div`
     margin-right: 10px;
     height: 32px;
     width: 32px;
+    border-radius:4px;
   }
 `;
 
