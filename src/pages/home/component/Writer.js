@@ -31,7 +31,7 @@ class Writer extends Component {
           </WriterSwitch>
         </WriterTitle>
         {list.map(item => (
-          <WriterItem>
+          <WriterItem key={item.get('id')}>
             <img className='writer-img' alt='' src={item.get('imgUrl')} />
             <WriterInfoWrapper>
               <WriterName>{item.get('writerName')}</WriterName>
